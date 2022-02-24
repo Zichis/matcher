@@ -10,6 +10,10 @@ class Property extends Model
 {
     use HasFactory;
 
+    protected $casts = [
+        'fields' => 'array'
+    ];
+
     protected $fillable = ['name', 'address', 'property_type_id', 'fields'];
 
     /** Relationships */
