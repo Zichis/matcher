@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('search_profiles', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->foreignId('property_type_id');
+            $table->json('search_fields');
             $table->timestamps();
         });
     }
