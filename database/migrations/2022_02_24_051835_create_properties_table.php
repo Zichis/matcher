@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('properties', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('address');
+            $table->foreignId('property_type_id');
+            $table->json('fields');
             $table->timestamps();
         });
     }
