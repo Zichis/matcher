@@ -17,4 +17,9 @@ class PropertyType extends Model
     {
         return $this->hasMany(Property::class);
     }
+
+    public function searchProfiles(): HasMany
+    {
+        return $this->hasMany(SearchProfile::class);
+    }
 }
