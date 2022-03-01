@@ -16,6 +16,11 @@ class SearchProfile extends Model
 
     protected $fillable = ['name', 'property_type_id', 'search_fields'];
 
+    public function scopeByPropertyType($query, PropertyType $propertyType)
+    {
+        return $query->where('property_type_id', $propertyType->id);
+    }
+
     /** Relationships */
     public function propertyType(): BelongsTo
     {
