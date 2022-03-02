@@ -10,4 +10,4 @@ GET /api/match/{propertyId}
 
 ### Response
 
-`"data" => [ ["searchProfileId" => {id}, "score" => {matchScore}, "strictMatchesCount" => {counter}, "loosesMatchesCount" => {counter}], ["searchProfileId" => {id}, "score" => {matchScore}, "strictMatchesCount" => {counter}, "loosesMatchesCount" => {counter}] [...] ]`
+`"data" => [ ["searchProfileId" => {id}, "score" => {matchScore}, "strictMatchesCount" => {counter}, "loosesMatchesCount" => {counter}], ["searchProfileId" => {id}, "score" => {matchScore}, "strictMatchesCount" => {counter}, "loosesMatchesCount" => {counter}], [...] ]`
